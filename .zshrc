@@ -62,15 +62,16 @@ fi
 source $HOME/antigen.zsh
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle zdharma/history-search-multi-word
 export NVM_LAZY_LOAD=true
 antigen bundle lukechilds/zsh-nvm
 antigen theme denysdovhan/spaceship-prompt
 antigen apply
 
 # aliases
-## common utils
+## common utils
 alias ls='ls -F --color --hyperlink'
 alias ll='ls -lA --group-directories-first'
 alias lh='ll -h'
@@ -81,6 +82,6 @@ alias less='less -JNw'
 ## screen
 alias sls='screen -ls'
 alias srs='screen -xS'
-## misc.
+## misc.
 alias zshconf="vim $HOME/.zshrc"
 alias sshconf="vim $HOME/.ssh/config"
